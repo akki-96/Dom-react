@@ -1,11 +1,6 @@
 import "./styles.css";
-<<<<<<< Codesandbox
 import { useState } from "react";
-=======
-
->>>>>>> GitHub
 export default function App() {
-<<<<<<< Codesandbox
   const api = `https://randomuser.me/api`;
   const [user, setUser] = useState([]);
 
@@ -14,16 +9,6 @@ export default function App() {
     const userJson = await userData.json();
     // setUser(userJson.results[0].gender);
     const newUser = [...user, userJson.results[0]];
-=======
-  return (
-    <div className="App">
-      <h2>DOM Array React!</h2>
-      <h1>Hello CodeSandbox</h1>
-    </div>
-  );
-}
-
->>>>>>> GitHub
     setUser(newUser);
   };
 
